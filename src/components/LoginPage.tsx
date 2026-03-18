@@ -1,14 +1,14 @@
-function App() {
+export function LoginPage() {
   return (
-    <div className="font-display bg-blue-900">
-      <div className="layout-content-container flex flex-col w-full bg-white dark:bg-slate-900 shadow-2xl rounded-xl overflow-hidden md:flex-row">
+    <div className="w-screen h-screen flex justify-center font-display bg-blue-900 items-center">
+      <div className="layout-content-container flex flex-col w-280 h-120 bg-white dark:bg-slate-900 +. rounded-xl overflow-hidden md:flex-row">
 
-        <div className="relative z-10 flex flex-col gap-6">
+        <div className="relative z-10 flex flex-col gap-6 p-8 justify-center">
 
           <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             Todo o seu mundo digital em um único
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400">
+          <p className="text-lg text-slate-600 dark:text-slate-400 flex ">
             Junte-se a milhares de profissionais que usam o Link Hub para gerenciar sua presença online.
           </p>
           <div className="flex flex-col gap-4 mt-8">
@@ -20,18 +20,17 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
 
 
       <div className="flex flex-col w-full md:w-1/2 p-8 sm:p-12 lg:p-16 justify-center">
         <div className="flex flex-col gap-2 mb-8">
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Login e Cadastro</h2>
-          <p className="text-slate-500 dark:text-slate-400">Acesse seu painel do Link Hub.</p>
+          <h2 className="text-3xl font-bold text-slate-900-">Login e Cadastro</h2>
+          <p className="text-slate-500">Acesse seu painel do Link Hub.</p>
         </div>
 
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">E-mail</label>
+            <label className="text-sm font-semibold text-slate-700">E-mail</label>
             <div className="relative">
               <input
                 className="w-full pl-3 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
@@ -62,7 +61,7 @@ function App() {
       </div>
 
     </div>
+    </div>
   );
 }
 
-export default App;
