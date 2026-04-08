@@ -1,11 +1,11 @@
 export function LoginPage() {
   return (
-    <div className="w-screen h-screen flex justify-center font-display bg-blue-900 items-center">
-      <div className="layout-content-container flex flex-col w-280 h-120 bg-white dark:bg-slate-900 +. rounded-xl overflow-hidden md:flex-row">
+    <div className="w-screen h-screen flex justify-center font-display bg-red-800 items-center">
+      <div className="layout-content-container flex flex-col w-280 h-120 bg-white +. rounded-xl overflow-hidden md:flex-row">
 
         <div className="relative z-10 flex flex-col gap-6 p-8 justify-center">
 
-          <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 ">
             Todo o seu mundo digital em um único
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 flex ">
@@ -33,7 +33,7 @@ export function LoginPage() {
             <label className="text-sm font-semibold text-slate-700">E-mail</label>
             <div className="relative">
               <input
-                className="w-full pl-3 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                className="w-full pl-3 pr-4 py-3 bg-slate-50  border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
                 placeholder="nome@empresa.com"
                 type="email"
               />
@@ -47,14 +47,14 @@ export function LoginPage() {
             </div>
             <div className="relative">
               <input
-                className="w-full pl-3 pr-12 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                className="w-full pl-3 pr-12 py-3 bg-slate-50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
                 placeholder="••••••••"
                 type="password"
               />
             </div>
           </div>
 
-          <button className="w-full py-3 bg-primary bg-blue-400 text-white font-bold rounded-lg shadow-lg transition-all flex items-center justify-center gap-2 mt-4">
+          <button className="w-full py-3 bg-primary bg-orange-950 text-white font-bold rounded-lg shadow-lg transition-all flex items-center justify-center gap-2 mt-4">
             <span className="material-symbols-outlined text-xl">login</span>
           </button>
         </div>

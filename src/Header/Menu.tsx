@@ -1,11 +1,10 @@
 export function Menu() {
     return (
-        <nav>
-            <ul className="flex gap-2">
-                <li><a href="/"></a></li>
-                <li><a href="/Login"></a></li>
-                <li><a href="/Cadastro"></a></li>
-            </ul>
-        </nav>
+        <div className="space-x-4">
+            <a href="/" className="text-white font-bold">Componentes</a>
+            <a href="/Login" className="text-white font-bold">Login</a>
+            <a href="/Cadastro" className="text-white font-bold">Cadastro</a>
+
+        </div>
     );
 }
