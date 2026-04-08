@@ -7,15 +7,13 @@ interface ILink {
 }
 
 export const EditPage = () => {
-    // Referências diretas (Estados individuais)
-    const [name, setName] = useState("Jose");
+    const [name, setName] = useState("");
     const [github, setGithub] = useState("");
     const [linkedin, setLinkedin] = useState("");
     const [instagram, setInstagram] = useState("");
     const [facebook, setFacebook] = useState("");
     const [tiktok, setTiktok] = useState("");
 
-    // Estado para os links dinâmicos
     const [links, setLinks] = useState<ILink[]>([]);
 
     const handleAddLink = () => {
@@ -92,18 +90,16 @@ export const EditPage = () => {
                     </form>
                 </main>
 
-                {/* PREVIEW */}
                 <aside className="w-full md:w-4/12 bg-slate-50 p-8 flex flex-col items-center border-l border-slate-100">
                     <div className="w-24 h-24 bg-red-800 rounded-full mb-4 flex items-center justify-center text-white text-3xl font-bold shadow-md">
-                        {name ? name.charAt(0).toUpperCase() : "?"}
                     </div>
                     <h2 className="text-2xl font-bold text-slate-900 mb-1">{name || "Seu Nome"}</h2>
                     <p className="text-slate-500 text-sm mb-8">{github ? `@${github}` : "@usuario"}</p>
                     
                     <ul className="w-full space-y-3">
-                        {/* LINK GITHUB DINÂMICO */}
                         {github && (
                             <li>
+                                
                                 <a 
                                     href={`https://github.com/${github}`} 
                                     target="_blank" 
@@ -115,7 +111,6 @@ export const EditPage = () => {
                             </li>
                         )}
 
-                        {/* LINKS EXTRAS DA LISTA */}
                         {links.map((link, index) => (
                             <li key={index}>
                                 <a 
