@@ -17,7 +17,6 @@ export const ProfilePreview = ({ name, github, linkedin, instagram, tiktok, face
     return (
         <aside className="w-full md:w-4/12 bg-slate-50 p-8 flex flex-col items-center">
             <div className="w-20 h-20 bg-red-800 rounded-full mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                {name.charAt(0).toUpperCase() || "?"}
             </div>
             
             <h2 className="text-xl font-bold text-slate-900 mb-4">{name || "Seu Nome"}</h2>
